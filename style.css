@@ -13,7 +13,9 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
-    background-color: #0ca38a ;
+}
+.bottom-shadow {
+    box-shadow: 0 5px 5px -5px #333;
 }
 .header-logo {
     padding: 0 20px 0 10px;
@@ -24,15 +26,106 @@ header {
 .header-menu  {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
-    width: 800px;
+    width: 900px;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+}
+.header-menu p:hover {
+    background-color: #dee3e1;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .header-links {
     display: flex;
     align-items: center;
 }
 .header-links img {
-    width: 45px;
+    width: 36px;
+    padding: 0 4px;
+}
+.header-links img:hover {
+    background-color: #dee3e1;
+    border-radius: 5px;
+}
+.main-block {
+    height: 100%;
+    padding: 0 10px;
+}
+.receive-book-info, .know-yourself-info {
+    display: flex;
+    padding-top: 20px;
+}
+.receive-book-text {
+    font-size: 2rem;
+    line-height: 1.3;
+    flex-basis: 60%;
+    padding: 50px 30px 0 0;
+}
+.receive-book-photo {
+    flex-basis: 40%;
+    background: url("image/receive-book-photo3.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+.receive-book-note {
+    width: 58%;
+    font-size: 0.9rem;
+    padding: 10px 0;
+}
+.receive-book-payment {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.receive-book-payment  p {
+    font-size: 1.5rem;
+}
+.pay-download, .pay-later, .buy-book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+}
+.book-button {
+    width: 300px;
+    background-color: #d1e3e3;
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input[type=email] {
+    width: 300px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.know-yourself-photo {
+    flex-basis: 40%;
+    background: url("image/know-yourself1.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+}
+.know-yourself-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    flex-basis: 60%;
+    padding: 50px 0 0 50px;
+}
+.book-button {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.know-yourself-text>.book-button {
 }
