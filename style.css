@@ -3,19 +3,20 @@
     padding: 0;
 }
 body {
-    max-width: 1200px;
     margin: 0 auto;
     font-size: 16px;
     height: 100%;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 header {
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+.header-block {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
-}
-.bottom-shadow {
-    box-shadow: 0 5px 5px -5px #333;
 }
 .header-logo {
     padding: 0 20px 0 10px;
@@ -38,28 +39,44 @@ header {
     border-radius: 5px;
     cursor: pointer;
 }
+.header-lang {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
 .header-links {
     display: flex;
     align-items: center;
+    padding-left: 10px;
+    border-left: 2px solid rgba(0,0,0,0.1);
 }
-.header-links img {
-    width: 36px;
-    padding: 0 4px;
+.header-links i {
+    padding: 0 6px;
+}
+#linkfacebook img, #linkinstagram img {
+    width: 30px;
 }
 .header-links img:hover {
     background-color: #dee3e1;
     border-radius: 5px;
 }
 .main-block {
+    max-width: 1200px;
+    margin: 0 auto;
     height: 100%;
-    padding: 0 10px;
+    padding: 20px 10px;
+}
+#receive-book {
+    max-width: 900px;
+    margin: 0 auto;
 }
 .receive-book-info, .know-yourself-info {
     display: flex;
-    padding-top: 20px;
 }
 .receive-book-text {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
     line-height: 1.3;
     flex-basis: 60%;
     padding: 50px 30px 0 0;
@@ -69,7 +86,7 @@ header {
     background: url("image/receive-book-photo3.jpg") no-repeat;
     background-position: center;
     background-size: cover;
-    height: 60vh;
+    height: 45vh;
 }
 .receive-book-note {
     width: 58%;
@@ -78,6 +95,7 @@ header {
 }
 .receive-book-payment {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
 }
@@ -88,44 +106,75 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: space-between;
+}
+.pay-download p, .buy-book p {
+    padding: 5px;
 }
 .book-button {
-    width: 300px;
-    background-color: #d1e3e3;
-    font-size: 1.5em;
-    padding: 10px;
-    margin: 20px 0;
+    width: 270px;
+    background-color: #1c1c1c;
+    color: #FFF;
+    font-size: 1.3em;
+    padding: 10px 5px;
+    margin: 20px 0 0 0;
+    text-transform: uppercase;
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
+.book-button:hover {
+    background-color: #424344;
+}
 input[type=email] {
-    width: 300px;
-    font-size: 1.5em;
+    width: 270px;
+    font-size: 1.3em;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    padding: 5px 5px 5px 10px;
+    box-shadow: 0 5px 5px -5px #333;
+
 }
 .know-yourself-photo {
     flex-basis: 40%;
     background: url("image/know-yourself1.jpg") no-repeat;
     background-position: center;
     background-size: cover;
-    height: 50vh;
+    height: 40vh;
 }
 .know-yourself-text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.5rem;
     line-height: 1.3;
     flex-basis: 60%;
     padding: 50px 0 0 50px;
 }
-.book-button {
+.know-yourself-text p {
     font-size: 1.3rem;
+}
+.look-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.look-info h2 {
+    font-weight: 300;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
-.know-yourself-text>.book-button {
+.look-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.look-block img {
+    width: 96px;
+    border-radius: 50%;
+    padding: 20px;
+}
+.look-block p {
+    flex: 1;
+    font-size: 1.3rem;
 }
