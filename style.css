@@ -82,6 +82,9 @@ header {
 .receive-book-info, .know-yourself-info {
     display: flex;
 }
+.mobile-receive-book-info, .mobile-receive-book-note-payment {
+    display: none;
+}
 .receive-book-text {
     font-size: 1.6rem;
     font-weight: 300;
@@ -141,6 +144,9 @@ input[type=email] {
     border-radius: 10px;
     cursor: pointer;
     padding: 5px 5px 5px 10px;
+    box-shadow: 0 5px 5px -5px #333;
+}
+input[type=email]:active {
     box-shadow: 0 5px 5px -5px #333;
 }
 .know-yourself-photo {
@@ -369,17 +375,155 @@ footer {
     text-decoration: none;
     color: #fff;
 }
-@media (max-width: 768px) {
+
+#toggle {
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    float: right;
+    transition: all 0.3s ease-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#toggle .span {
+    height: 7px;
+    background: #333;
+    margin: 5px auto;
+    backface-visibility: hidden;
+}
+
+#toggle.on #one {
+    transform: rotate(45deg) translateX(6px) translateY(6px);
+}
+
+#toggle.on #two {
+    opacity: 0;
+}
+
+#toggle.on #three {
+    transform: rotate(-45deg) translateX(10px) translateY(-12px);
+}
+#resize {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    background: #ddd;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    display: table;
+}
+#resize #menu {
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#resize #menu li {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 50px;
+    min-height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+#resize #menu li:hover {
+    background: #212121;
+}
+
+#resize #menu li:hover a {
+    color: #fff;
+    transition: all 0.3s ease-out;
+}
+
+#resize #menu li a {
+    color: #212121;
+}
+
+#resize.active {
+    visibility: visible;
+    opacity: 0.99;
+}
+@media screen and (max-width: 1250px) {
+    .header-links, .header-lang {
+        display: none;
+    }
+    .header-block {
+    justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .header-menu {
+        display: none;
+    }
+    .header-block {
+        justify-content: space-between;
+    }
     #toggle {
         visibility: visible;
         opacity: 1;
     }
-    nav #menu {
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .main-block {
+        padding: 10px;
+    }
+    .receive-book-info, .receive-book-note, .receive-book-payment {
         display: none;
+    }
+    .mobile-receive-book-info, .mobile-receive-book-note-payment{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .receive-book-text {
+        margin: 10px 0;
+        padding: 0;
+    }
+    .receive-book-photo {
+        margin: 20px 0;
+    }
+    .author-sign, .footer-block, .why-block, .know-yourself-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile-receive-book-note {
+        font-size: 0.7rem;
+        padding: 10px 0;
+    }
+    .book-button {
+        margin: 0;
+    }
+    .pay-download, .buy-book {
+        padding-bottom: 15px;
+    }
+    .pay-download p, .buy-book p {
+        padding: 2px;
+    }
+    .know-yourself-photo {
+        flex-basis: 1 1 100;
+    }
+    .why-item {
+        margin: 10px 0;
     }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 720px) {
     #resize {
         display: none;
         visibility: hidden !important;
