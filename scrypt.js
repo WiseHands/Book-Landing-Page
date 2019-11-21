@@ -1,11 +1,25 @@
-$(function() {
+// $(function() {
+//
+//     $("#toggle").click(function() {
+//         $(this).toggleClass("on");
+//         $("#resize").toggleClass("active");
+//     });
+//
+// });
 
-    $("#toggle").click(function() {
-        $(this).toggleClass("on");
-        $("#resize").toggleClass("active");
+(function() {
+    let toogle = document.querySelector('#toggle');
+    toogle.addEventListener("click", function(){
+        toogle.classList.toggle("on");
+        let resize = document.querySelector('#resize');
+        resize.classList.toggle("active");
+
     });
 
-});
+
+    // the DOM will be available here
+
+})();
 
 
 
