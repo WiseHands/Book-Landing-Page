@@ -491,14 +491,14 @@ footer {
         flex-direction: column;
         align-items: center;
     }
-    .receive-book-text {
+    .receive-book-text, .know-yourself-text {
         margin: 10px 0;
         padding: 0;
     }
-    .receive-book-photo {
+    .receive-book-photo, .know-yourself-photo {
         margin: 20px 0;
     }
-    .author-sign, .footer-block, .why-block, .know-yourself-info {
+    .author-sign, .footer-block, .why-block, .know-yourself-info, .why-book {
         flex-direction: column;
         align-items: center;
     }
@@ -509,17 +509,53 @@ footer {
     .book-button {
         margin: 0;
     }
-    .pay-download, .buy-book {
+    .pay-download {
         padding-bottom: 15px;
+    }
+    .buy-book {
+        padding-bottom: 39px;
     }
     .pay-download p, .buy-book p {
         padding: 2px;
     }
-    .know-yourself-photo {
-        flex-basis: 1 1 100;
+    .know-yourself-info {
+        display: block;
+    }
+    .know-yourself-info .book-button, .look-info .book-button, .why-book, .why-book .book-button, #critical-thinking .book-button, .author-sign p  {
+        margin: 10px 0;
+    }
+    .look-block {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    .look-block img {
+        width: 72px;
+        height: 72px;
+        padding: 10px;
     }
     .why-item {
         margin: 10px 0;
+    }
+    .critical-thinking-info {
+        flex-direction: column-reverse;
+    }
+    .critical-thinking-photo {
+        flex-basis: unset;
+    }
+    {
+        margin: 10px 0;
+    }
+    .author-sign img {
+        width: 96px;
+    }
+    .footer-block {
+        height: 18vh;
+    }
+    .footer-copyright {
+       display: none;
+   }
+    .footer-social {
+        border-left: none;
     }
 }
 
