@@ -23,7 +23,6 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
 }
 .header-logo {
     padding: 0 20px 0 10px;
@@ -71,13 +70,12 @@ header {
 }
 .main-block {
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     height: 100%;
-    padding: 50px 10px;
+    padding: 0 10px;
 }
-#receive-book {
-    max-width: 900px;
-    margin: 0 auto;
+.link-height {
+    height: 64px;
 }
 .receive-book-info, .know-yourself-info {
     display: flex;
@@ -172,11 +170,12 @@ input[type=email]:active {
     flex-direction: column;
     align-items: center;
 }
-.look-info h2, .why-info h2 {
+body h2 {
     font-weight: 300;
     font-size: 1.5rem;
     text-transform: uppercase;
     padding-bottom: 10px;
+    text-align: center;
 }
 .look-block {
     width: 100%;
@@ -235,6 +234,10 @@ input[type=email]:active {
     background-position: center;
     background-size: cover;
     height: 40vh;
+}
+.critical-thinking-button {
+    display: flex;
+   justify-content: center;
 }
 .critical-thinking-text {
     display: flex;
@@ -330,13 +333,6 @@ png images background
     float: left;
     padding: 0 20px 20px 0;
 }
-#author h2 {
-    font-weight: 300;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    padding-bottom: 10px;
-    text-align: center;
-}
 .author-sign {
     display: flex;
     justify-content: space-around;
@@ -413,7 +409,6 @@ footer {
     position: absolute;
     top: 0px;
     background: #ddd;
-    width: 100%;
     height: 100%;
     visibility: hidden;
     opacity: 0;
@@ -421,33 +416,38 @@ footer {
     display: table;
 }
 #resize #menu {
-    height: 50px;
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-around;
 }
 
-#resize #menu li {
+#resize #menu p {
     display: block;
     text-align: center;
     padding: 20px 0;
     text-align: center;
-    font-size: 50px;
+    font-size: 2rem;
     min-height: 50px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease-out;
 }
-
-#resize #menu li:hover {
+#resize #menu a {
+    width: 100%;
+    text-decoration: none;
+}
+#resize #menu p:hover {
     background: #212121;
 }
 
-#resize #menu li:hover a {
+#resize #menu p:hover {
     color: #fff;
     transition: all 0.3s ease-out;
 }
 
-#resize #menu li a {
+#resize #menu p {
     color: #212121;
 }
 
@@ -470,12 +470,15 @@ footer {
     }
     .header-block {
         justify-content: space-between;
+        padding: 0;
     }
     #toggle {
         visibility: visible;
         opacity: 1;
     }
-
+    #resize {
+        width: 100%;
+    }
 
 }
 
@@ -556,12 +559,5 @@ footer {
    }
     .footer-social {
         border-left: none;
-    }
-}
-
-@media screen and (min-width: 720px) {
-    #resize {
-        display: none;
-        visibility: hidden !important;
     }
 }
