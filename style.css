@@ -17,6 +17,7 @@ header {
     height: 100%;
     width: 100%;
     background-color: #f7f7f9;
+    padding-bottom: 10px;
 }
 .header-block {
     max-width: 1200px;
@@ -77,7 +78,7 @@ header {
 .link-height {
     height: 64px;
 }
-.receive-book-info, .know-yourself-info {
+.receive-book-info, .know-yourself-info, .review-info{
     display: flex;
 }
 .mobile-receive-book-info, .mobile-receive-book-note-payment {
@@ -174,7 +175,7 @@ input[type=email]:active {
 .know-yourself-text p {
     font-size: 1.3rem;
 }
-.look-info, .why-info {
+.look-info, .why-info, .review-author {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,83 +257,21 @@ body h2 {
     flex-basis: 60%;
     padding-right: 30px;
 }
-.reviews {
-    width : 900px;
-    height : 20vh;
-    overflow : hidden ;
-    background-color : #fff ;
-    border-radius : 5px;
-    margin : 0 auto ;
-    position : relative ;
-    box-shadow : 0 0 10px -2px #ddd ;
+.review-info {
+    padding-top: 20px;
 }
-.panel {
-    width : 100%;
-    max-height: 100%;
-    position : absolute ;
+.review-author {
+    flex-basis: 40%;
 }
-.PanelAct {
-    left : 0 ;
+.review-text {
+    flex-basis: 50%;
 }
-.panel img {
-    width : 100px;
-    height : 100px;
-    text-align : center ;
-    float : left ;
-    margin : 25px;
+.review-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding-bottom: 10px;
 }
-/*== Removal Start
-png images background
-==*/
-.panel:nth-of-type(1) img {
-    background : #12aedb ;
-}
-.panel:nth-of-type(2) img {
-    background : #db4646 ;
-}
-.panel:nth-of-type(3) img {
-    background : #96c465 ;
-}
-/*== Removal End==*/
-
-.panel p {
-    float : left ;
-    max-width : 700px;
-    clear : right ;
-    text-align : justify ;
-    margin : 25px 0 10px 0;
-    font-size : 14px ;
-    color : #aaa ;
-    line-height : 1.2em
-}
-.panel h7 {
-    float : left ;
-    width: 200px;
-    font-size : 14px ;
-    color : #999 ;
-    font-weight : bold ;
-    font-style : italic ;
-}
-.control {
-    position : absolute ;
-    bottom : 20px;
-    right : 30px;
-}
-.control span {
-    background-color : rgba(0,0,0,0.1) ;
-    padding : 5px;
-    display : inline-block ;
-    vertical-align : top ;
-    margin-left : 5px ;
-    border-radius : 50%;
-    cursor : pointer ;
-    transition : 0.3s ease-in
-}
-.ContActive {
-    background-color : #bbb !important ;
-}
-
-/**/
 .author-info {
     display: flex;
     flex-direction: column;
@@ -472,7 +411,6 @@ footer {
     justify-content: space-around;
     }
 }
-
 @media screen and (max-width: 990px) {
     .header-menu {
         display: none;
@@ -488,12 +426,13 @@ footer {
     #resize {
         width: 100%;
     }
-
 }
-
 @media screen and (max-width: 768px) {
     .main-block {
         padding: 10px;
+    }
+    .bg-color:nth-child(2n+1) {
+        padding-bottom: 0;
     }
     .receive-book-info, .receive-book-note, .receive-book-payment {
         display: none;
