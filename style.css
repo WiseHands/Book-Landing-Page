@@ -379,7 +379,7 @@ footer {
 }
 .footer-block {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -394,6 +394,13 @@ footer {
     align-items: center;
     padding-left: 10px;
     border-left: 2px solid #fff;
+}
+.wisehands-text {
+    display: none;
+}
+.footer-wisehands img {
+    width: 36px;
+    padding-left: 10px;
 }
 .footer-mail a {
     text-decoration: none;
@@ -594,14 +601,19 @@ footer {
     .author-sign img {
         width: 96px;
     }
-    .footer-block {
-        height: 18vh;
-    }
     .footer-copyright {
        display: none;
    }
-    .footer-social {
+    .footer-wisehands {
+        display: flex;
+        align-items: center;
+    }
+    .wisehands-text {
+        display: block;
+    }
+    .footer-social, .footer-wisehands {
         border-left: none;
+        padding: 5px 0;
     }
     input:focus ~ label, input:valid ~ label 		{
         top:-45px;
