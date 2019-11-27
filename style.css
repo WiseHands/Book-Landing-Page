@@ -118,6 +118,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
+    padding-top: 10px;
 }
 .receive-book-payment  p {
     font-size: 1.5rem;
@@ -145,18 +146,101 @@ header {
 .book-button:hover {
     background-color: #424344;
 }
-input[type=email] {
-    width: 250px;
-    font-size: 1.3em;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    padding: 5px 5px 5px 10px;
-    box-shadow: 0 5px 5px -5px #333;
+.send-email 	  {
+    position:relative;
 }
-input[type=email]:active {
-    box-shadow: 0 5px 5px -5px #333;
+input			{
+    font-size:1.3rem;
+    padding:5px 10px 5px 5px;
+    display:block;
+    width:250px;
+    border:none;
+    border-bottom:1px solid #757575;
 }
+input:focus {
+    outline:none;
+}
+label 				 {
+    color:#999;
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+    top:-10px;
+    font-size:0.9rem;
+    color:#5264AE;
+}
+.bar 	{
+    position:relative;
+    display:block;
+    width:250px;
+}
+.bar:before, .bar:after 	{
+    content:'';
+    height:2px;
+    width:0;
+    bottom:1px;
+    position:absolute;
+    background:#5264AE;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+}
+.bar:before {
+    left:50%;
+}
+.bar:after {
+    right:50%;
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+    position:absolute;
+    height:60%;
+    width:100px;
+    top:25%;
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background:#5264AE; }
+    to 	{ width:0; background:transparent; }
+}
+
+
+
 .know-yourself-photo {
     flex-basis: 40%;
     background: url("image/happy22.jpg") no-repeat;
@@ -258,7 +342,13 @@ body h2 {
     padding-right: 30px;
 }
 .review-info {
+    align-items: center;
+    margin: 0 auto;
     padding-top: 20px;
+}
+.control {
+    cursor: pointer;
+    opacity: 0.6;
 }
 .review-author {
     flex-basis: 40%;
@@ -495,6 +585,20 @@ footer {
     }
     {
         margin: 10px 0;
+    }
+    .review-info {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .control {
+        display: none;
+    }
+    .review-photo img {
+        width: 100px;
+        height: 100px;
+    }
+    .review-author {
+        padding-bottom: 15px;
     }
     .author-sign img {
         width: 96px;
