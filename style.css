@@ -24,12 +24,13 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding: 3px 0;
 }
 .header-logo {
     padding: 0 20px 0 10px;
 }
 .header-logo img {
-    width: 60px;
+    width: 40px;
 }
 .header-menu  {
     display: flex;
@@ -76,7 +77,7 @@ header {
     padding: 0 10px;
 }
 .link-height {
-    height: 64px;
+    height: 50px;
 }
 .receive-book-info, .know-yourself-info, .review-info{
     display: flex;
@@ -128,6 +129,9 @@ header {
     flex-direction: column;
     align-items: center;
 }
+.pay-later .book-button {
+    margin-top: 2px;
+}
 .pay-download p, .buy-book p {
     padding: 5px;
 }
@@ -146,28 +150,25 @@ header {
 .book-button:hover {
     background-color: #424344;
 }
-.send-email 	  {
-    position:relative;
-}
+
 input			{
     font-size:1.3rem;
-    padding:5px 10px 5px 5px;
+    padding: 3px 0;
     display:block;
     width:250px;
     border:none;
-    border-bottom:1px solid #757575;
+    border-bottom: 1px solid #757575;
 }
 input:focus {
     outline:none;
 }
 label 				 {
-    color:#999;
-    font-size:18px;
-    font-weight:normal;
-    position:absolute;
+    color:#ddd;
+    font-size: 1rem;
+    position:relative;
     pointer-events:none;
     left:5px;
-    top:10px;
+    top: -23px;
     transition:0.2s ease all;
     -moz-transition:0.2s ease all;
     -webkit-transition:0.2s ease all;
@@ -175,7 +176,7 @@ label 				 {
 
 /* active state */
 input:focus ~ label, input:valid ~ label 		{
-    top:-10px;
+    top:-50px;
     font-size:0.9rem;
     color:#5264AE;
 }
@@ -207,16 +208,6 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
     width:50%;
 }
 
-/* HIGHLIGHTER ================================== */
-.highlight {
-    position:absolute;
-    height:60%;
-    width:100px;
-    top:25%;
-    left:0;
-    pointer-events:none;
-    opacity:0.5;
-}
 
 /* active state */
 input:focus ~ .highlight {
@@ -348,7 +339,6 @@ body h2 {
 }
 .control {
     cursor: pointer;
-    opacity: 0.6;
 }
 .review-author {
     flex-basis: 40%;
@@ -413,7 +403,7 @@ footer {
 #toggle {
     position: absolute;
     right: 20px;
-    top: 14px;
+    top: 2px;
     z-index: 999;
     width: 40px;
     height: 40px;
@@ -426,7 +416,7 @@ footer {
 
 #toggle .span {
     height: 7px;
-    background: #333;
+    background: rgba(0,0,0,0.7);
     margin: 5px auto;
     backface-visibility: hidden;
 }
@@ -459,6 +449,7 @@ footer {
     align-items: center;
     height: 100vh;
     justify-content: space-around;
+    padding-top: 10px;
 }
 
 #resize #menu p {
@@ -491,7 +482,7 @@ footer {
 
 #resize.active {
     visibility: visible;
-    opacity: 0.99;
+    opacity: 1;
 }
 @media screen and (max-width: 1250px) {
     .header-links, .header-lang {
@@ -611,5 +602,11 @@ footer {
    }
     .footer-social {
         border-left: none;
+    }
+    input:focus ~ label, input:valid ~ label 		{
+        top:-45px;
+    }
+    .link-height {
+        height: 44px;
     }
 }
