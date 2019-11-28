@@ -19,6 +19,9 @@ header {
     background-color: #f7f7f9;
     padding-bottom: 10px;
 }
+.bg-color:nth-child(5) {
+    background-color: #000;
+}
 .header-block {
     max-width: 1200px;
     margin: 0 auto;
@@ -308,6 +311,9 @@ body h2 {
     font-size: 1.3rem;
     line-height: 1.3;
 }
+#why {
+    color: #fff;
+}
 .why-block {
     display: flex;
     justify-content: space-around;
@@ -337,9 +343,20 @@ body h2 {
     width: 100%;
     align-items: baseline;
 }
+.why-book input[type=button] {
+    border: 2px solid #fff;
+}
+.why-book input[type=button]:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #fff;
+}
 .why-info p, .critical-thinking-text p {
     font-size: 1.3rem;
     line-height: 1.3;
+}
+.why-info p, h2 {
+    color: #fff;
 }
 #critical-thinking {
     display: flex;
