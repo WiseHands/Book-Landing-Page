@@ -96,7 +96,7 @@
                     <p>99 грн</p>
                 </div>
                 <div>
-                    <input type="button" class="book-button" value="оплатити та скачати" onclick="payForBook()">
+                    <input type="button" class="book-button" value="оплатити та скачати" onclick="payForBook99()">
                 </div>
             </div>
             <div class="pay-later">
@@ -114,7 +114,7 @@
                     <p>199 грн</p>
                 </div>
                 <div>
-                    <input type="button" class="book-button" value="КУПИТИ КНИГУ">
+                    <input type="button" class="book-button" value="КУПИТИ КНИГУ" onclick="payForBook199()>
                 </div>
             </div>
         </div>
@@ -349,8 +349,11 @@
             resize.classList.toggle("active");
         }
 
-        function payForBook() {
+        function payForBook99() {
             window.location = 'https://secure.wayforpay.com/button/bf0d65da84e01';
+        }
+        function payForBook199() {
+            window.location = 'https://secure.wayforpay.com/button/bacd074ca99b1';
         }
 
     </script>
