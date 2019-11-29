@@ -164,6 +164,7 @@ body a {
 }
 .pay-download p, .buy-book p {
     padding: 5px;
+    font-weight: 600;
 }
 .book-button {
     width: 270px;
@@ -435,6 +436,16 @@ body h2 {
 .author-sign img {
     width: 150px;
 }
+.author-sign input[type=button] {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+.author-sign input[type=button]:hover {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+}
 footer {
     background-color: #000;
     color: #fff;
@@ -469,6 +480,7 @@ footer h3 {
 }
 .small-text p {
     font-size: 0.4rem;
+    color: #9A9999;
 }
 .footer-social {
     display: flex;
