@@ -571,6 +571,9 @@ footer h3 {
     .header-block {
     justify-content: space-around;
     }
+    .footer-text, .footer-block {
+        width: 98%;
+    }
 }
 @media screen and (max-width: 990px) {
     .header-menu {
@@ -586,6 +589,16 @@ footer h3 {
     }
     #resize {
         width: 100%;
+    }
+    footer h3 {
+        padding: 10px 0;
+    }
+    .footer-text {
+        flex-wrap: wrap;
+    }
+    .footer-payment, .footer-delivery, .footer-return, .footer-contact {
+        flex-basis: 46%;
+        padding-bottom: 10px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -715,5 +728,8 @@ footer h3 {
     }
     .link-height {
         height: 44px;
+    }
+    .footer-payment, .footer-delivery, .footer-return, .footer-contact {
+        flex-basis: 98%;
     }
 }
