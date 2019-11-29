@@ -463,6 +463,7 @@ footer {
 }
 .footer-text p {
     font-size: 0.8rem;
+    line-height: 1.3;
 }
 footer h3 {
     text-transform: uppercase;
