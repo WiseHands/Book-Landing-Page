@@ -425,6 +425,10 @@ body h2 {
     align-items: center;
     padding: 10px 0 0 0;
 }
+.author-name-sign {
+    display: flex;
+    align-items: center;
+}
 .author-sign p {
     font-size: 1.3rem;
 }
@@ -462,6 +466,9 @@ footer h3 {
 .footer-slogan {
     text-transform: uppercase;
     font-size: 1.5rem;
+}
+.small-text p {
+    font-size: 0.4rem;
 }
 .footer-social {
     display: flex;
@@ -731,5 +738,8 @@ footer h3 {
     }
     .footer-payment, .footer-delivery, .footer-return, .footer-contact {
         flex-basis: 98%;
+    }
+    .footer-slogan {
+        font-size: 1.3rem;
     }
 }
