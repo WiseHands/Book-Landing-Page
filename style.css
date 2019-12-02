@@ -377,7 +377,7 @@ body h2 {
 }
 .critical-thinking-photo {
     flex-basis: 40%;
-    background: url("image/think11.jpg") no-repeat;
+    background: url("image/critical.png") no-repeat;
     background-position: center;
     background-size: cover;
     height: 30vh;
