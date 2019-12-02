@@ -416,8 +416,8 @@ body h2 {
     flex-direction: column;
 }
 .author-text img {
-    width: 160px;
-    float: left;
+    width: 250px;
+    float: right;
     padding: 0 20px 20px 0;
 }
 .author-sign {
@@ -725,6 +725,11 @@ footer h3 {
     }
     .review-author {
         padding-bottom: 15px;
+    }
+    .author-text img {
+        width: 140px;
+        float: left;
+        padding: 0 10px 10px 0;
     }
     .author-sign img {
         width: 96px;
