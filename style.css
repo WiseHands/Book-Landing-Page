@@ -189,7 +189,7 @@ input			{
     display:block;
     width:250px;
     border:none;
-    border-bottom: 1px solid #757575;
+    border-bottom: 1px solid #faa719;
 }
 input:focus {
     outline:none;
@@ -223,7 +223,7 @@ input:focus ~ label, input:valid ~ label 		{
     width:0;
     bottom:1px;
     position:absolute;
-    background:#5264AE;
+    background:#faa719;
     transition:0.2s ease all;
     -moz-transition:0.2s ease all;
     -webkit-transition:0.2s ease all;
@@ -263,12 +263,23 @@ input:focus ~ .highlight {
 }
 
 
-
+.bg-color:nth-child(3):before, .bg-color:nth-child(5):before {
+    display: block;
+    height: 35px;
+    content: "";
+    background: url(image/edge_up_compressed.png) repeat-x scroll 0% 100%/contain #fff;
+}
+.bg-color:nth-child(4):before, .bg-color:nth-child(6):before{
+    display: block;
+    height: 35px;
+    content: "";
+    background: url(image/edge_down_compressed.png) repeat-x scroll 0% 0%/contain #fff;
+}
 .know-yourself-photo {
     flex-basis: 40%;
     background: url("image/know-photo.png") no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     height: 42vh;
 }
 .know-yourself-text {
