@@ -263,13 +263,13 @@ input:focus ~ .highlight {
 }
 
 
-.bg-color:nth-child(3):before, .bg-color:nth-child(5):before {
+.bg-color:nth-child(3):before, .bg-color:nth-child(5):before, .bg-color:nth-child(7):before, .bg-color:nth-child(9):before  {
     display: block;
     height: 35px;
     content: "";
     background: url(image/edge_up_compressed.png) repeat-x scroll 0% 100%/contain #fff;
 }
-.bg-color:nth-child(4):before, .bg-color:nth-child(6):before{
+.bg-color:nth-child(4):before, .bg-color:nth-child(6):before, .bg-color:nth-child(8):before{
     display: block;
     height: 35px;
     content: "";
@@ -277,7 +277,7 @@ input:focus ~ .highlight {
 }
 .know-yourself-photo {
     flex-basis: 40%;
-    background: url("image/know-photo.png") no-repeat;
+    background: url("image/know-photo1.png") no-repeat;
     background-position: center;
     background-size: contain;
     height: 42vh;
@@ -391,7 +391,7 @@ body h2 {
     background: url("image/critical.png") no-repeat;
     background-position: center;
     background-size: cover;
-    height: 30vh;
+    height: 40vh;
 }
 .critical-thinking-text {
     display: flex;
