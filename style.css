@@ -207,7 +207,7 @@ label 				 {
 }
 
 /* active state */
-input:focus ~ label, input:valid ~ label 		{
+input:focus ~ label, input:not(:placeholder-shown) ~ label 		{
     top:-50px;
     font-size:0.9rem;
     color:#5264AE;
@@ -772,3 +772,7 @@ footer h3 {
         font-size: 1.3rem;
     }
 }
+form > div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown) {
+    background: pink;
+}
+
