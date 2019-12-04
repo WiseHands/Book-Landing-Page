@@ -407,6 +407,9 @@ body h2 {
     padding-top: 20px;
     color: #fff;
 }
+.review-sign p:first-child {
+    font-size: 1.3rem;
+}
 .control {
     cursor: pointer;
 }
