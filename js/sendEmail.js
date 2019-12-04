@@ -13,13 +13,12 @@ function postNewEmail(data) {
         }
     }).then(function(response){
         if(response.ok) {
-/*            document.getElementById('hideifsuccess').style.display = 'none';
-            document.getElementById('success').style.display = 'block';
-            document.getElementById('success-button').style.display = 'block';*/
+            document.querySelector('.send-email').style.display = 'none';
+            document.querySelector('.mail-button').style.display = 'none';
+            document.querySelector('.send-email-success').style.display = 'block';
         } else {
-/*            document.getElementById('hideifsuccess').style.display = 'none';
-            document.getElementById('error').style.display = 'block';
-            document.getElementById('success-button').style.display = 'block';*/
+            document.querySelector('.send-email').style.display = 'none';
+            document.querySelector('.send-email-error').style.display = 'block';
         }
         console.log(response)
         return  response.json();

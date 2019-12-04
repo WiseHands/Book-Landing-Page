@@ -180,7 +180,7 @@ body a {
 .book-button:hover {
     background-color: #424344;
 }
-.send-email {
+.send-email, .send-email-success, .send-email-error {
     padding-top: 25px;
 }
 input[type=text], input[type=email]			{
@@ -818,4 +818,7 @@ input[type=radio] {
 form > div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown) {
     background: pink;
 }
-
+.send-email-success, .send-email-error {
+    display: none;
+    padding-bottom: 23px;
+}
