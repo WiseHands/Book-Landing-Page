@@ -183,7 +183,7 @@ body a {
 .send-email {
     padding-top: 25px;
 }
-input			{
+input[type=text]			{
     font-size:1.3rem;
     padding: 3px 0;
     display:block;
@@ -407,6 +407,9 @@ body h2 {
     padding-top: 20px;
     color: #fff;
 }
+.review-sign p:first-child {
+    font-size: 1.3rem;
+}
 .control {
     cursor: pointer;
 }
@@ -595,6 +598,46 @@ footer h3 {
     visibility: visible;
     opacity: 1;
 }
+/*PAYMENT PAGE*/
+.payment-details {
+    padding-top: 100px;
+    max-width: 900px;
+}
+.payment-details input[type=text] {
+    font-size: 0.8rem;
+}
+input[type=radio] {
+    margin: 5px 0;
+}
+.payment-method, .delivery-method, .recipient-info {
+    display: flex;
+    padding: 20px 0;
+}
+.payment-method p, .delivery-method p, .recipient-info p {
+    width: 20%;
+}
+.payment-type {
+    padding-left: 50px;
+}
+.recipient-info {
+    flex-direction: column;
+}
+.recipient-name {
+    flex-direction: column;
+}
+.recipient-name, .recipient-number {
+    display: flex;
+    padding-top: 10px;
+}
+.recipient-info p {
+    padding-right: 20px;
+}
+.send-info {
+    display: flex;
+    padding: 10px 10px 10px 0;
+}
+/*PAYMENT PAGE*/
+
 @media screen and (max-width: 1250px) {
     .header-links, .header-lang {
         display: none;
