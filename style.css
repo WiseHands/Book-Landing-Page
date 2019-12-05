@@ -823,3 +823,6 @@ form > div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown) {
     display: none;
     padding-bottom: 23px;
 }
+.send-email-success-mobile, .send-email-error-mobile {
+    display: none;
+}

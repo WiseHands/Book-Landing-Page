@@ -12,6 +12,18 @@ function ValidateEmail (inputText) {
     }
 }
 
+function ValidateEmailMobile (inputText) {
+
+    if(inputText.value.match(mailformat)) {
+        document.getElementById('email-mobile').focus();
+        return true;
+    } else {
+        alert("Ви ввели неправильну e-mail адресу!");
+        document.getElementById('email-mobile').focus();
+        return false;
+    }
+}
+
 function postNewEmail(data) {
 
     let email = document.getElementById('email').value;
@@ -34,6 +46,40 @@ function postNewEmail(data) {
             } else {
                 document.querySelector('.send-email').style.display = 'none';
                 document.querySelector('.send-email-error').style.display = 'block';
+            }
+            console.log(response)
+            return response.json();
+        }).then(function (data) {
+            console.log(data);
+        })
+    } else {
+        console.log("email is not match the pattern");
+    }
+
+}
+
+function postNewEmailMobile(data) {
+
+    let email = document.getElementById('email-mobile').value;
+
+    let params = '?email=' + email;
+
+    let apiUrl = '/api' + params;
+    if (email.match(mailformat)) {
+        fetch(apiUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                body: data
+            }
+        }).then(function (response) {
+            if (response.ok) {
+                document.querySelectorAll('.send-email')[1].style.display = 'none';
+                document.querySelectorAll('.pay-later')[1].style.display = 'none';
+                document.querySelector('.send-email-success-mobile').style.display = 'block';
+            } else {
+                document.querySelectorAll('.send-email')[1].style.display = 'none';
+                document.querySelector('.send-email-error-mobile').style.display = 'block';
             }
             console.log(response)
             return response.json();
