@@ -114,7 +114,7 @@
                         адміністрації за адресою three-sides@gmail.com</p>
                 </div>
                 <div class="mail-button">
-                    <input type="button" class="book-button" value="ВІДДЯЧИТИ ПОТІМ" onclick="postNewEmail()">
+                    <input type="button" class="book-button" value="ВІДДЯЧИТИ ПОТІМ" onclick="ValidateEmail(document.getElementById('email'));postNewEmail()">
                 </div>
             </div>
             <div class="buy-book">
@@ -145,12 +145,19 @@
                 </div>
             </div>
             <div class="pay-later">
-                <input type="button" class="book-button" value="ВІДДЯЧИТИ ПОТІМ">
+                <input type="button" class="book-button" value="ВІДДЯЧИТИ ПОТІМ" onclick="ValidateEmail(document.getElementById('email'));postNewEmail()">
             </div>
             <div class="send-email">
                 <input type="text" required>
                 <span class="bar"></span>
                 <label>Email</label>
+            </div>
+            <div class="send-email-success">
+                <p>Книгу успішно надіслано на Ваш e-mail!</p>
+            </div>
+            <div class="send-email-error">
+                <p>Виникла помилка! Зверніться будь ласка до <br>
+                    адміністрації за адресою three-sides@gmail.com</p>
             </div>
             <div class="mobile-receive-book-note">
                 <p>* <span>при скачуванні електронного варіанту книги у Вас є можливість віддячити автору за 4 роки його праці зараз або потім, коли прочитаєте та самі визначите суму, еквівалентну тій користі, яку почерпнули з книги.</span></p>
