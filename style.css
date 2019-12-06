@@ -780,6 +780,7 @@ input[type=radio] {
     }
     .review-author {
         padding-bottom: 15px;
+        width: 38%;
     }
     .author-text img {
         width: 140px;
