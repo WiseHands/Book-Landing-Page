@@ -13,23 +13,13 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="import"  href="https://polygit.org/polymer+^1.9.1/webcomponentsjs+^0.7.0/components/polymer/polymer.html">
+
 </head>
 <body>
+<paper-input always-float-label label="Floating label"></paper-input>
+
     <div class="payment-details main-block">
-        <div class="payment-method">
-            <p>Спосіб оплати</p>
-            <div class="payment-type">
-                <input type="radio" name="payment" value="cash"> Готівкою, при отриманні замовлення<br>
-                <input type="radio" name="payment" value="online"> Оплата за допомогою Visa/Mastercard<br>
-            </div>
-        </div>
-        <div class="delivery-method">
-            <p>Спосіб доставки</p>
-            <div class="payment-type">
-                <input type="radio" name="delivery" value="self">Самовивіз<br>
-                <input type="radio" name="delivery" value="novaposhta">Отримати на відділенні Нової пошти<br>
-            </div>
-        </div>
         <div class="recipient-info">
             <div class="recipient-name">
                 <div class="send-info">
@@ -50,7 +40,23 @@
                     <span class="bar"></span>
                 </div>
             </div>
+        </div>
+        <div class="payment-method">
+            <p>Спосіб оплати</p>
+            <div class="payment-type">
+                <input type="radio" name="payment" value="cash"> Готівкою, при отриманні замовлення<br>
+                <input type="radio" name="payment" value="online"> Оплата за допомогою Visa/Mastercard<br>
+            </div>
+        </div>
+        <div class="delivery-method">
+            <p>Спосіб доставки</p>
+            <div class="payment-type">
+                <input type="radio" name="delivery" value="self">Самовивіз<br>
+                <input type="radio" name="delivery" value="novaposhta">Отримати на відділенні Нової пошти<br>
+            </div>
+        </div>
     </div>
+<paper-input label="text input"></paper-input>
 
 </body>
 </html>
