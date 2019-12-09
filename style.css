@@ -540,7 +540,7 @@ footer h3 {
 
 #toggle .span {
     height: 7px;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.65);
     margin: 5px auto;
     backface-visibility: hidden;
 }
@@ -791,10 +791,11 @@ input[type=radio] {
     }
     .review-author {
         padding-bottom: 15px;
-        width: 38%;
-    }
-    .author-text img, .review-author {
         float: none;
+    }
+    .author-text img {
+        width: 140px;
+        float: left;
     }
     .author-sign img {
         width: 96px;
