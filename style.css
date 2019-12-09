@@ -500,7 +500,7 @@ footer h3 {
 }
 .footer-slogan {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 .small-text p {
     font-size: 0.4rem;
@@ -514,6 +514,7 @@ footer h3 {
 .footer-wisehands {
     display: flex;
     align-items: center;
+    padding-left: 20px;
 }
 .footer-wisehands img {
     width: 36px;
@@ -796,6 +797,8 @@ input[type=radio] {
     .author-text img {
         width: 140px;
         float: left;
+        padding: 0 20px 10px 0;
+
     }
     .author-sign img {
         width: 96px;
