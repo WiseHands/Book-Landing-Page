@@ -15,6 +15,7 @@ header {
 }
 body a {
     text-decoration: none;
+    color: #fff;
 }
 .justify-text {
     text-align: justify;
@@ -112,7 +113,7 @@ body a {
 }
 .receive-book-photo {
     flex-basis: 40%;
-    background: url("image/receive-book-photo3.jpg") no-repeat;
+    background: url("image/cover.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     height: 45vh;
@@ -280,7 +281,7 @@ input:focus ~ .highlight {
 }
 .know-yourself-photo {
     flex-basis: 40%;
-    background: url("image/know-photo1.png") no-repeat;
+    background: url("image/know-photo.png") no-repeat;
     background-position: center;
     background-size: contain;
     height: 42vh;
@@ -405,6 +406,7 @@ body h2 {
     padding-right: 30px;
 }
 .review-info {
+    flex-direction: column;
     align-items: center;
     margin: 0 auto;
     padding-top: 20px;
@@ -413,12 +415,18 @@ body h2 {
 .review-sign p:first-child {
     font-size: 1.3rem;
 }
+.review-sign p {
+    font-size: 0.9rem;
+}
+.review2 {
+    padding-top: 80px;
+}
 .control {
     cursor: pointer;
 }
 .review-author {
     float: left;
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
 }
 .review-photo img {
     width: 150px;
@@ -502,10 +510,10 @@ footer h3 {
     display: flex;
     align-items: center;
     padding-left: 10px;
-    border-left: 2px solid #fff;
 }
-.wisehands-text {
-    display: none;
+.footer-wisehands {
+    display: flex;
+    align-items: center;
 }
 .footer-wisehands img {
     width: 36px;
@@ -683,6 +691,9 @@ input[type=radio] {
     .main-block {
         padding: 10px;
     }
+    .justify-text {
+        text-align: start;
+    }
     .bg-color:nth-child(2n+1) {
         padding-bottom: 0;
     }
@@ -782,10 +793,8 @@ input[type=radio] {
         padding-bottom: 15px;
         width: 38%;
     }
-    .author-text img {
-        width: 140px;
-        float: left;
-        padding: 0 10px 10px 0;
+    .author-text img, .review-author {
+        float: none;
     }
     .author-sign img {
         width: 96px;
@@ -797,11 +806,7 @@ input[type=radio] {
         display: flex;
         align-items: center;
     }
-    .wisehands-text {
-        display: block;
-    }
     .footer-social, .footer-wisehands {
-        border-left: none;
         padding: 5px 0;
     }
     input:focus ~ label, input:valid ~ label 		{
