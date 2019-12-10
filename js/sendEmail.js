@@ -75,7 +75,7 @@ function postNewEmailMobile(data) {
 
         document.querySelector('.send-email').style.display = 'none';
         document.querySelector('.mail-button').style.display = 'none';
-        document.querySelector('.send-email-progress-text-email').style.display = 'block';
+        document.querySelector('.send-email-progress-text-mobile').style.display = 'block';
 
         fetch(apiUrl, {
             method: 'POST',
@@ -87,7 +87,7 @@ function postNewEmailMobile(data) {
             if (response.ok) {
                 document.querySelectorAll('.send-email')[1].style.display = 'none';
                 document.querySelectorAll('.pay-later')[1].style.display = 'none';
-                document.querySelector('.send-email-progress-text-email').style.display = 'none';
+                document.querySelector('.send-email-progress-text-mobile').style.display = 'none';
                 document.querySelector('.send-email-success-mobile').style.display = 'block';
             } else {
                 document.querySelectorAll('.send-email')[1].style.display = 'none';
