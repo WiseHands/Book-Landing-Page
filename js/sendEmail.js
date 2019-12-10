@@ -32,6 +32,11 @@ function postNewEmail(data) {
 
     let apiUrl = '/api' + params;
     if (email.match(mailformat)) {
+
+        document.querySelector('.send-email').style.display = 'none';
+        document.querySelector('.mail-button').style.display = 'none';
+        document.querySelector('.send-email-progress-text').style.display = 'block';
+
         fetch(apiUrl, {
             method: 'POST',
             headers: {
@@ -42,6 +47,7 @@ function postNewEmail(data) {
             if (response.ok) {
                 document.querySelector('.send-email').style.display = 'none';
                 document.querySelector('.mail-button').style.display = 'none';
+                document.querySelector('.send-email-progress-text').style.display = 'none';
                 document.querySelector('.send-email-success').style.display = 'block';
             } else {
                 document.querySelector('.send-email').style.display = 'none';
@@ -66,6 +72,11 @@ function postNewEmailMobile(data) {
 
     let apiUrl = '/api' + params;
     if (email.match(mailformat)) {
+
+        document.querySelector('.send-email').style.display = 'none';
+        document.querySelector('.mail-button').style.display = 'none';
+        document.querySelector('.send-email-progress-text-email').style.display = 'block';
+
         fetch(apiUrl, {
             method: 'POST',
             headers: {
@@ -76,6 +87,7 @@ function postNewEmailMobile(data) {
             if (response.ok) {
                 document.querySelectorAll('.send-email')[1].style.display = 'none';
                 document.querySelectorAll('.pay-later')[1].style.display = 'none';
+                document.querySelector('.send-email-progress-text-email').style.display = 'none';
                 document.querySelector('.send-email-success-mobile').style.display = 'block';
             } else {
                 document.querySelectorAll('.send-email')[1].style.display = 'none';
