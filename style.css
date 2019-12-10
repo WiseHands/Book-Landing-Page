@@ -516,6 +516,10 @@ footer h3 {
     align-items: center;
     padding-left: 20px;
 }
+.footer-wisehands a {
+    display: flex;
+    align-items: center;
+}
 .footer-wisehands img {
     width: 36px;
     padding-left: 10px;
@@ -712,6 +716,9 @@ input[type=radio] {
     }
     .receive-book-photo, .know-yourself-photo {
         margin: 20px 0;
+    }
+    .receive-book-photo {
+        height: 54vh;
     }
     .author-sign, .footer-block, .why-block, .know-yourself-info, .why-book {
         flex-direction: column;
