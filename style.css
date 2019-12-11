@@ -650,6 +650,32 @@ input[type=radio] {
     display: flex;
     padding: 10px 10px 10px 0;
 }
+.success-block {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 7rem 0;
+}
+.success-block h2 {
+    padding: 3rem 0;
+}
+.success-block input[type=button] {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    width: 270px;
+    font-size: 1.3em;
+    padding: 10px 5px;
+    margin: 20px 0 0 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.success-block input[type=button]:hover {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
 /*PAYMENT PAGE*/
 
 @media screen and (max-width: 1250px) {
@@ -831,6 +857,17 @@ input[type=radio] {
     }
     .footer-slogan {
         font-size: 1.3rem;
+    }
+    .success-block {
+        padding: 3rem 0;
+    }
+    .success-block img {
+        width: 150px;
+        height: 150px;
+    }
+    .success-block h2 {
+        padding: 2rem 0;
+        font-size: 1.8rem;
     }
 }
 form > div > input[type="email"]:invalid:not(:focus):not(:placeholder-shown) {
