@@ -113,7 +113,7 @@ body a {
 }
 .receive-book-photo {
     flex-basis: 40%;
-    background: url("image/cover.jpg") no-repeat;
+    background: url("image/cover1.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     height: 45vh;
