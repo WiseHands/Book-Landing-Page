@@ -296,7 +296,7 @@ input:focus ~ .highlight {
     font-family: montserrat;
     font-size: 1.5rem;
 }
-.look-info, .why-info, .review-author {
+.look-info, .why-info {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -405,6 +405,20 @@ body h2 {
     flex-basis: 60%;
     padding-right: 30px;
 }
+#review h2 {
+    padding-bottom: 20px;
+}
+.review-title {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+.review-author {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 .review-info {
     flex-direction: column;
     align-items: center;
@@ -412,21 +426,34 @@ body h2 {
     padding-top: 20px;
     color: #fff;
 }
+.review-sign {
+    padding-top: 10px;
+}
 .review-sign p:first-child {
     font-size: 1.3rem;
+    font-weight: 600;
 }
 .review-sign p {
     font-size: 0.9rem;
 }
-.review2 {
-    padding-top: 80px;
+.review-photo1, .review-photo2  {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
-.control {
-    cursor: pointer;
+.review-photo1 {
+    background: url(image/review1.jpg) no-repeat;
+    background-size: cover;
 }
-.review-author {
-    float: left;
-    padding: 0 20px 20px 20px;
+.review-active {
+    box-shadow: 0px 0px 10px 10px #d7d6d9;
+}
+.review-inactive {
+    box-shadow: 0px 0px 10px 10px #222;
+}
+.review-photo2 {
+    background: url(image/review2.jpg) no-repeat;
+    background-size: cover;
 }
 .review-photo img {
     width: 150px;
@@ -455,6 +482,7 @@ body h2 {
 }
 .author-sign p {
     font-size: 1.3rem;
+    font-weight: 600;
 }
 .author-sign img {
     width: 150px;
@@ -811,23 +839,23 @@ input[type=radio] {
     .critical-thinking-photo {
         flex-basis: unset;
     }
-    {
-        margin: 10px 0;
+    .review-sign p:first-child {
+        font-size: 1.2rem;
+    }
+    .review-sign p {
+        font-size: 0.8rem;
     }
     .review-info {
         flex-direction: column;
         padding-bottom: 20px;
     }
-    .control {
-        display: none;
-    }
-    .review-photo img {
+    .review-photo1, .review-photo2  {
         width: 100px;
         height: 100px;
+        border-radius: 50%;
     }
     .review-author {
-        padding-bottom: 15px;
-        float: none;
+        padding-bottom: 5px;
     }
     .author-text img {
         width: 140px;
