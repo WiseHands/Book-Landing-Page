@@ -392,7 +392,7 @@ body h2 {
 }
 .critical-thinking-photo {
     flex-basis: 40%;
-    background: url("image/critical.png") no-repeat;
+    background: url("image/critical.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     height: 40vh;
