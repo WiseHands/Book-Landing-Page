@@ -675,7 +675,9 @@ input[type=radio] {
     color: #fff;
     border: 2px solid #fff;
 }
-
+.text {
+    font-size: 1.5em;
+}
 /*PAYMENT PAGE*/
 
 @media screen and (max-width: 1250px) {
