@@ -845,6 +845,9 @@ input[type=radio] {
     .review-sign p {
         font-size: 0.8rem;
     }
+    .review-sign span {
+        display: none;
+    }
     .review-info {
         flex-direction: column;
         padding-bottom: 20px;
